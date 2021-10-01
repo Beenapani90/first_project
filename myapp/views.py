@@ -81,10 +81,10 @@ def update_profile(request):
         return redirect('profile')     
 
 def update_pic(request):
-    if request.method=='POST'
+    if request.method=='POST':
 
-    image = request.POST['image']
-    pro = profile.objects.get(user=request.user)
-    pro.image = image
-    pro.save()
-    return redirect
+        image = request.POST['image']
+        pro = profile.objects.get(user=request.user)
+        pro.image = image
+        pro.save()
+        return redirect
